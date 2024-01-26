@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+
+{% block contents %}
+
+<h1>Number of Users </h1>
+{% if details %}
+{% for list in details %}
+<p>Name: {{list.person_name}}  Contact: {{list.phone}} </p>
+{% endfor %}
+{% else %}
+<p> No user  </p>
+{% endif %}
+
+{% endblock %}
