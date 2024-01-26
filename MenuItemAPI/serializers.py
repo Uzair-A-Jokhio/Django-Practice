@@ -10,7 +10,7 @@ from decimal import Decimal
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
-        fields = ['id','slug','title']
+        fields = ['id','title']
 
 
 """ Model-Serializer """
